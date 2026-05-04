@@ -1,0 +1,4 @@
+import base64
+code="W2J1aWxkXQogIGNvbW1hbmQgPSAicHl0aG9uMyBidWlsZC5weSIKICBwdWJsaXNoID0gIi4iCiAgZnVuY3Rpb25zID0gIm5ldGxpZnkvZnVuY3Rpb25zIgoKW1tyZWRpcmVjdHNdXQogIGZyb20gPSAiL2FwaS9jb3Ntb3MtYWkiCiAgdG8gPSAiLy5uZXRsaWZ5L2Z1bmN0aW9ucy9jb3Ntb3MtYWkiCiAgc3RhdHVzID0gMjAwCiAgZm9yY2UgPSB0cnVlCg=="
+open("netlify.toml","wb").write(base64.b64decode(code))
+print("netlify.toml created")
